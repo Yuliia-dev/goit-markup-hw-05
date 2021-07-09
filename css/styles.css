@@ -613,17 +613,24 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.3);
+}
 .modal {
   position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 530px;
   height: 580px;
   background-color: var(--title-color);
@@ -631,6 +638,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .modal-btn {
   position: absolute;
   top: 8px;
