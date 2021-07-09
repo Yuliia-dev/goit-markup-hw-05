@@ -9,6 +9,7 @@
   --border-color: #eeeeee;
   --line-color: #ececec;
   --icon-color: #afb1b8;
+  --hover-btn: #188ce8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -214,6 +215,9 @@ img {
   border-radius: 4px;
   color: var(--title-color);
   background: var(--accent-color);
+}
+.hero-button-text:hover {
+  background: var(--hover-btn);
 }
 
 /* Specifics */
